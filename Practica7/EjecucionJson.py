@@ -91,6 +91,13 @@ t_corch_fin = r'\]'
 t_oper_access = r'.'
 t_comma = r','
 
+def t_texto(t):
+  r'"([^\\"]|\\")*"'
+  #r'"[a-zA-Z_][a-zA-Z_0-9-.]*( [a-zA-Z_][a-zA-Z_0-9]*)*"'
+  t.type = reserved.get(t.value,'texto')   
+  # Check for reserved words
+  return t
+
 def t_id(t):
      r'[a-zA-Z_][a-zA-Z_0-9]*'
      t.type = reserved.get(t.value,'id')   
