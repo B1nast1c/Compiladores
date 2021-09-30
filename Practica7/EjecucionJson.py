@@ -115,7 +115,7 @@ def t_error(t):
 lexer = lex.lex()
   # Test it out
 
-with open('Practica 1\Ejemplos.json') as jsonFile:
+with open('.\Ejemplos.json') as jsonFile:
     jsonObject = json.load(jsonFile)
     jsonFile.close()
 
