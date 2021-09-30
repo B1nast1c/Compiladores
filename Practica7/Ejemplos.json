@@ -1,0 +1,7 @@
+{
+    "ejemplo1" : "3 + 4 * 10 + -20 *2",
+    "ejemplo2" : "||: hola mundo :|| \n 3 + 5 - 5 + 2",
+    "ejemplo3" : "3 <= 2 5>=7 3*8  3**8 4!=4",
+    "ejemplo4" : "falso",
+    "ejemplo5" : "pentagrama vero  \n 3==2"
+}
