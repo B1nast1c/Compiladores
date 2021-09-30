@@ -91,10 +91,11 @@ t_oper_access = r'.'
 t_comma = r','
 
 def t_texto(t):
-     r'"[a-zA-Z_][a-zA-Z_0-9]*"'
-     t.type = reserved.get(t.value,'texto')   
-      # Check for reserved words
-     return t
+  r'"([^\\"]|\\")*"'
+  #r'"[a-zA-Z_][a-zA-Z_0-9-.]*( [a-zA-Z_][a-zA-Z_0-9]*)*"'
+  t.type = reserved.get(t.value,'texto')   
+  # Check for reserved words
+  return t
 
 def t_id(t):
      r'[a-zA-Z_][a-zA-Z_0-9]*'
@@ -128,7 +129,7 @@ ejemplos=['''3 + 4 * 10 + -20 *2''',
 '''pentagrama vero
 3==2'''] #Arreglo de ejmplos uwu
 
-f = open ('Ejemplo2.txt','r')
+f = open ('Ejemplo4.txt','r')
 mensaje = f.read()
 f.close()
 
