@@ -1,0 +1,3 @@
+pentagrama () {
+  corda x = 3 * 8;
+}
