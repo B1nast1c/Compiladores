@@ -1,0 +1,5 @@
+pentagrama () {
+  corda x = 3 * 8;
+  scelta foo = vero;
+  corda var1;
+}
