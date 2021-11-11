@@ -191,30 +191,23 @@ def verif_tipo(lista):
   if lista[0][0] == 'id': #Si es variable en lugar de tipo
     tipo = find_token_variable(lista[0][1])
   else:
-    tipo = lista[0][0]
-  parametros = ['number', 'texto', 'char', 'true' ,'false']
+    tipo = diccionario[lista[0][0]]
+  parametros1 = ['number', 'texto', 'char', 'true' ,'false']
+  parametros2 = ['tempo', 'corda', 'acapella', 'scelta']
   for i in range(len(lista)):
     if lista[i][0] == 'id':
       
-      if find_token_variable(lista[0][1]) in parametros:
-        if tipo != lista[i][0]:
+      if find_token_variable(lista[i][0]) in parametros2:
+        if tipo != find_token_variable(lista[i][0]):
           return False
-    elif lista[i][0] in parametros:
-      if tipo != lista[i][0]:
+    elif [lista[i][0]] in parametros1:
+      if tipo != diccionario[lista[i][0]]:
         return False
       
-  return diccionario[tipo] #Clave valor
+  return tipo #Clave valor
 
 
 if __name__=='__main__':
   root = parsing()
   if root != None:
     crear_lista_simbolos(root)
-
-  
-
-
-
-
-
-
