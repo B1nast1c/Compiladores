@@ -1,0 +1,3 @@
+pentagrama () {
+  x = 56;
+}

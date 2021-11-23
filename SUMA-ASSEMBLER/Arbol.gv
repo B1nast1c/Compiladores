@@ -1,0 +1,103 @@
+digraph G {
+	node [color=lightblue style=filled]
+	1 [label=PROGRAM]
+	2 [label=FUNCS color=lightblue]
+	1 -> 2
+	3 [label=PRINC color=lightblue]
+	1 -> 3
+	3 [label=PRINC]
+	115 [label=pentagrama color=lightcoral]
+	3 -> 115
+	116 [label="(" color=lightcoral]
+	3 -> 116
+	117 [label=")" color=lightcoral]
+	3 -> 117
+	118 [label="{" color=lightcoral]
+	3 -> 118
+	119 [label=BLOQUE color=lightblue]
+	3 -> 119
+	120 [label="}" color=lightcoral]
+	3 -> 120
+	120 [label="}"]
+	119 [label=BLOQUE]
+	121 [label=LINEA color=lightblue]
+	119 -> 121
+	122 [label=LINEAS color=lightblue]
+	119 -> 122
+	122 [label=LINEAS]
+	253 [label=BLOQUE color=lightblue]
+	122 -> 253
+	253 [label=BLOQUE]
+	364 [label=" " color=lightcoral]
+	253 -> 364
+	364 [label=" "]
+	121 [label=LINEA]
+	123 [label=VAR_DECL color=lightblue]
+	121 -> 123
+	123 [label=VAR_DECL]
+	124 [label=TYPE_SPEC color=lightblue]
+	123 -> 124
+	125 [label=x color=lightcoral]
+	123 -> 125
+	126 [label=VAR_MOD color=lightblue]
+	123 -> 126
+	126 [label=VAR_MOD]
+	128 [label=ASIGN_STAT color=lightblue]
+	126 -> 128
+	129 [label=";" color=lightcoral]
+	126 -> 129
+	129 [label=";"]
+	128 [label=ASIGN_STAT]
+	130 [label="=" color=lightcoral]
+	128 -> 130
+	131 [label=EXPR color=lightblue]
+	128 -> 131
+	131 [label=EXPR]
+	132 [label=VALOR_PARAM color=lightblue]
+	131 -> 132
+	133 [label=TIP_EXP color=lightblue]
+	131 -> 133
+	133 [label=TIP_EXP]
+	135 [label=ARITM_EXPR color=lightblue]
+	133 -> 135
+	135 [label=ARITM_EXPR]
+	136 [label=EXP_EXTRA color=lightblue]
+	135 -> 136
+	136 [label=EXP_EXTRA]
+	137 [label=OP_ARITM color=lightblue]
+	136 -> 137
+	138 [label=VALOR_PARAM color=lightblue]
+	136 -> 138
+	139 [label=EXP_EXTRA color=lightblue]
+	136 -> 139
+	139 [label=EXP_EXTRA]
+	252 [label=" " color=lightcoral]
+	139 -> 252
+	252 [label=" "]
+	138 [label=VALOR_PARAM]
+	141 [label=8 color=lightcoral]
+	138 -> 141
+	141 [label=8]
+	137 [label=OP_ARITM]
+	140 [label="+" color=lightcoral]
+	137 -> 140
+	140 [label="+"]
+	132 [label=VALOR_PARAM]
+	134 [label=3 color=lightcoral]
+	132 -> 134
+	134 [label=3]
+	130 [label="="]
+	125 [label=x]
+	124 [label=TYPE_SPEC]
+	127 [label=tempo color=lightcoral]
+	124 -> 127
+	127 [label=tempo]
+	118 [label="{"]
+	117 [label=")"]
+	116 [label="("]
+	115 [label=pentagrama]
+	2 [label=FUNCS]
+	114 [label=" " color=lightcoral]
+	2 -> 114
+	114 [label=" "]
+}

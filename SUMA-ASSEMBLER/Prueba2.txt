@@ -1,0 +1,15 @@
+corda Funcion_1(corda arg1){
+  Funcion_1(125);
+  bis(corda i=1, i <200, i = i+1){
+    corda x = 3 * 8;
+    scelta boolean = falso;
+    scelta boolean2 = vero;
+    x = 42
+  }
+}
+
+pentagrama () {
+  
+  corda x = 3 * 8;
+  scelta boolean = falso;
+}
