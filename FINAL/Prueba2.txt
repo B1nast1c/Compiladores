@@ -1,0 +1,8 @@
+corda Funcion_1(corda arg1 ){
+    tempo x = 3 * 8;
+    DC x;
+}
+
+pentagrama () {
+  tempo x = 3 * 8;
+}

@@ -1,0 +1,10 @@
+pentagrama () {
+ tempo x = 10;
+
+    Bsi(x > 20){
+      tempo x = 10;
+    }
+      Bno{
+      tempo x = 11;
+    }
+}

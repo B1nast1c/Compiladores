@@ -1,0 +1,11 @@
+
+pentagrama () {
+  corda guau =  334;
+  tempo x = 3 + 8;
+  tempo y = x + "guau";
+  scelta boolean = falso;
+  scelta boolean2 = vero;
+  corda f = 3 * 8 + z;
+}
+
+
